@@ -1,6 +1,6 @@
 const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
 const express = require('express');
-require('./keep_alive');
+
 
 const app = express();
 app.get('/', (req, res) => res.send('Bot online!'));
