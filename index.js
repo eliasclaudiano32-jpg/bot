@@ -1,4 +1,10 @@
 const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
+const express = require('express');
+require('./keep_alive');
+
+const app = express();
+app.get('/', (req, res) => res.send('Bot online!'));
+app.listen(3000, () => console.log('Servidor HTTP rodando na porta 3000'));
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
