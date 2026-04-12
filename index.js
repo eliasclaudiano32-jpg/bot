@@ -49,5 +49,4 @@ async function enviarMensagem() {
   }
 }
 
-client.once('ready', async () => {
-  console.log('Bot online como ' + cl
+client.once('ready', async () => {console.log('Bot online como ' + client.user.tag);
