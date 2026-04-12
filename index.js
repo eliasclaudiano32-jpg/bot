@@ -8,6 +8,8 @@ const CHANNEL_ID = process.env.CHANNEL_ID;
 const TOKEN = process.env.DISCORD_TOKEN;
 const INTERVALO = 30 * 60 * 1000;
 let ultimaMensagem = null;
+console.log('Token:', TOKEN ? 'presente' : 'AUSENTE');
+console.log('Channel:', CHANNEL_ID ? 'presente' : 'AUSENTE');
 function dentroDoHorario() {
   const agora = new Date();
   const totalMinutos = ((agora.getUTCHours() - 3 + 24) % 24) * 60 + agora.getUTCMinutes();
@@ -43,4 +45,5 @@ client.once('ready', async () => {
   enviarMensagem();
   setInterval(enviarMensagem, INTERVALO);
 });
-client.login(TOKEN);
+client.on('error', (err) => console.error('Erro Discord:', err));
+client.login(TOKEN).catch(err => console.error('Erro login:', err));
