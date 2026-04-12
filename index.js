@@ -1,4 +1,5 @@
-// v2const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
+// v2
+const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
 const express = require('express');
 
 const app = express();
