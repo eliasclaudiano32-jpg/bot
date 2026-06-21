@@ -1022,7 +1022,7 @@ client.on('interactionCreate', async (interaction) => {
 // LOGIN
 // ─────────────────────────────────────────────────────────────
 
-const TOKEN = 'MTQ5NzM0MTEyNzAzMDczNTA2MA.GBzyDi.6Fl-O8uh_ML6M0VunYMwLYYw-8hP8ELB6D53zc'; // ⚠️ Coloque seu token do Discord aqui
+const TOKEN = 'MTQ5NzM0MTEyNzAzMDczNTA2MA.GkACqN.18EC_k5Kb8pPWMiE5ktxaTz4uilxVof9VXdJKE'; // ⚠️ Coloque seu token do Discord aqui
 
 if (TOKEN === 'SEU_TOKEN_AQUI') {
   console.error('❌ ERRO: Insira o token do seu bot em TOKEN antes de iniciar!');
